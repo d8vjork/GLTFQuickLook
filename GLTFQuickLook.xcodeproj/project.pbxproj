@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA001A0000000000000000FF /* GLTFQuickLookApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00190000000000000000FF /* GLTFQuickLookApp.swift */; };
+		AA001C0000000000000000FF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA001B0000000000000000FF /* ContentView.swift */; };
+		AA002A0000000000000000FF /* GLTFQuickLookExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AA00270000000000000000FF /* GLTFQuickLookExtension.appex */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AA002C0000000000000000FF /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA002B0000000000000000FF /* PreviewViewController.swift */; };
+		AA003A0000000000000000FF /* GLTFQuickLookThumbnail.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AA00370000000000000000FF /* GLTFQuickLookThumbnail.appex */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AA003C0000000000000000FF /* ThumbnailProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA003B0000000000000000FF /* ThumbnailProvider.swift */; };
+		AA00600000000000000000FF /* GLTFKit2 in Frameworks */ = {isa = PBXBuildFile; productRef = AA00610000000000000000FF /* GLTFKit2 */; };
+		AA00620000000000000000FF /* GLTFKit2 in Frameworks */ = {isa = PBXBuildFile; productRef = AA00630000000000000000FF /* GLTFKit2 */; };
+		AA00640000000000000000FF /* GLTFKit2 in Frameworks */ = {isa = PBXBuildFile; productRef = AA00650000000000000000FF /* GLTFKit2 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AA00290000000000000000FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA00010000000000000000FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA00200000000000000000FF;
+			remoteInfo = GLTFQuickLookExtension;
+		};
+		AA00390000000000000000FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA00010000000000000000FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA00300000000000000000FF;
+			remoteInfo = GLTFQuickLookThumbnail;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AA00170000000000000000FF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AA002A0000000000000000FF /* GLTFQuickLookExtension.appex in Embed App Extensions */,
+				AA003A0000000000000000FF /* GLTFQuickLookThumbnail.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AA00180000000000000000FF /* GLTFQuickLook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLTFQuickLook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA00190000000000000000FF /* GLTFQuickLookApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLTFQuickLookApp.swift; sourceTree = "<group>"; };
+		AA001B0000000000000000FF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AA001D0000000000000000FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA00270000000000000000FF /* GLTFQuickLookExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = GLTFQuickLookExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA002B0000000000000000FF /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
+		AA002D0000000000000000FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA00370000000000000000FF /* GLTFQuickLookThumbnail.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = GLTFQuickLookThumbnail.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA003B0000000000000000FF /* ThumbnailProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailProvider.swift; sourceTree = "<group>"; };
+		AA003D0000000000000000FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA00150000000000000000FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA00640000000000000000FF /* GLTFKit2 in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA00250000000000000000FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA00600000000000000000FF /* GLTFKit2 in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA00350000000000000000FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA00620000000000000000FF /* GLTFKit2 in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA00050000000000000000FF = {
+			isa = PBXGroup;
+			children = (
+				AA00070000000000000000FF /* App */,
+				AA00080000000000000000FF /* PreviewExtension */,
+				AA00090000000000000000FF /* ThumbnailExtension */,
+				AA00060000000000000000FF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA00060000000000000000FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA00180000000000000000FF /* GLTFQuickLook.app */,
+				AA00270000000000000000FF /* GLTFQuickLookExtension.appex */,
+				AA00370000000000000000FF /* GLTFQuickLookThumbnail.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA00070000000000000000FF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AA00190000000000000000FF /* GLTFQuickLookApp.swift */,
+				AA001B0000000000000000FF /* ContentView.swift */,
+				AA001D0000000000000000FF /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		AA00080000000000000000FF /* PreviewExtension */ = {
+			isa = PBXGroup;
+			children = (
+				AA002B0000000000000000FF /* PreviewViewController.swift */,
+				AA002D0000000000000000FF /* Info.plist */,
+			);
+			path = PreviewExtension;
+			sourceTree = "<group>";
+		};
+		AA00090000000000000000FF /* ThumbnailExtension */ = {
+			isa = PBXGroup;
+			children = (
+				AA003B0000000000000000FF /* ThumbnailProvider.swift */,
+				AA003D0000000000000000FF /* Info.plist */,
+			);
+			path = ThumbnailExtension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA00100000000000000000FF /* GLTFQuickLook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA00110000000000000000FF /* Build configuration list for PBXNativeTarget "GLTFQuickLook" */;
+			buildPhases = (
+				AA00140000000000000000FF /* Sources */,
+				AA00150000000000000000FF /* Frameworks */,
+				AA00160000000000000000FF /* Resources */,
+				AA00170000000000000000FF /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA00280000000000000000FF /* PBXTargetDependency */,
+				AA00380000000000000000FF /* PBXTargetDependency */,
+			);
+			name = GLTFQuickLook;
+			packageProductDependencies = (
+				AA00650000000000000000FF /* GLTFKit2 */,
+			);
+			productName = GLTFQuickLook;
+			productReference = AA00180000000000000000FF /* GLTFQuickLook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AA00200000000000000000FF /* GLTFQuickLookExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA00210000000000000000FF /* Build configuration list for PBXNativeTarget "GLTFQuickLookExtension" */;
+			buildPhases = (
+				AA00240000000000000000FF /* Sources */,
+				AA00250000000000000000FF /* Frameworks */,
+				AA00260000000000000000FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GLTFQuickLookExtension;
+			packageProductDependencies = (
+				AA00610000000000000000FF /* GLTFKit2 */,
+			);
+			productName = GLTFQuickLookExtension;
+			productReference = AA00270000000000000000FF /* GLTFQuickLookExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		AA00300000000000000000FF /* GLTFQuickLookThumbnail */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA00310000000000000000FF /* Build configuration list for PBXNativeTarget "GLTFQuickLookThumbnail" */;
+			buildPhases = (
+				AA00340000000000000000FF /* Sources */,
+				AA00350000000000000000FF /* Frameworks */,
+				AA00360000000000000000FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GLTFQuickLookThumbnail;
+			packageProductDependencies = (
+				AA00630000000000000000FF /* GLTFKit2 */,
+			);
+			productName = GLTFQuickLookThumbnail;
+			productReference = AA00370000000000000000FF /* GLTFQuickLookThumbnail.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA00010000000000000000FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				ORGANIZATIONNAME = DarkHorse;
+				TargetAttributes = {
+					AA00100000000000000000FF = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					AA00200000000000000000FF = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					AA00300000000000000000FF = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = AA00020000000000000000FF /* Build configuration list for PBXProject "GLTFQuickLook" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA00050000000000000000FF;
+			packageReferences = (
+				AA00700000000000000000FF /* XCRemoteSwiftPackageReference "GLTFKit2" */,
+			);
+			productRefGroup = AA00060000000000000000FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA00100000000000000000FF /* GLTFQuickLook */,
+				AA00200000000000000000FF /* GLTFQuickLookExtension */,
+				AA00300000000000000000FF /* GLTFQuickLookThumbnail */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA00160000000000000000FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA00260000000000000000FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA00360000000000000000FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA00140000000000000000FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA001A0000000000000000FF /* GLTFQuickLookApp.swift in Sources */,
+				AA001C0000000000000000FF /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA00240000000000000000FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA002C0000000000000000FF /* PreviewViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA00340000000000000000FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA003C0000000000000000FF /* ThumbnailProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA00280000000000000000FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA00200000000000000000FF /* GLTFQuickLookExtension */;
+			targetProxy = AA00290000000000000000FF /* PBXContainerItemProxy */;
+		};
+		AA00380000000000000000FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA00300000000000000000FF /* GLTFQuickLookThumbnail */;
+			targetProxy = AA00390000000000000000FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AA00030000000000000000FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AA00040000000000000000FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		AA00120000000000000000FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = App/GLTFQuickLook.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6ZKL3ZKFLP;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.0spec.GLTFQuickLook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		AA00130000000000000000FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = App/GLTFQuickLook.entitlements;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6ZKL3ZKFLP;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.0spec.GLTFQuickLook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		AA00220000000000000000FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = PreviewExtension/GLTFQuickLookExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6ZKL3ZKFLP;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = PreviewExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.0spec.GLTFQuickLook.PreviewExtension;
+				PRODUCT_MODULE_NAME = GLTFQuickLookExtension;
+				PRODUCT_NAME = GLTFQuickLookExtension;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				WRAPPER_EXTENSION = appex;
+			};
+			name = Debug;
+		};
+		AA00230000000000000000FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = PreviewExtension/GLTFQuickLookExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6ZKL3ZKFLP;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = PreviewExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.0spec.GLTFQuickLook.PreviewExtension;
+				PRODUCT_MODULE_NAME = GLTFQuickLookExtension;
+				PRODUCT_NAME = GLTFQuickLookExtension;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				WRAPPER_EXTENSION = appex;
+			};
+			name = Release;
+		};
+		AA00320000000000000000FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = ThumbnailExtension/GLTFQuickLookThumbnail.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6ZKL3ZKFLP;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = ThumbnailExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.0spec.GLTFQuickLook.ThumbnailExtension;
+				PRODUCT_MODULE_NAME = GLTFQuickLookThumbnail;
+				PRODUCT_NAME = GLTFQuickLookThumbnail;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				WRAPPER_EXTENSION = appex;
+			};
+			name = Debug;
+		};
+		AA00330000000000000000FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = ThumbnailExtension/GLTFQuickLookThumbnail.entitlements;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6ZKL3ZKFLP;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = ThumbnailExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.0spec.GLTFQuickLook.ThumbnailExtension;
+				PRODUCT_MODULE_NAME = GLTFQuickLookThumbnail;
+				PRODUCT_NAME = GLTFQuickLookThumbnail;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				WRAPPER_EXTENSION = appex;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA00020000000000000000FF /* Build configuration list for PBXProject "GLTFQuickLook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA00030000000000000000FF /* Debug */,
+				AA00040000000000000000FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA00110000000000000000FF /* Build configuration list for PBXNativeTarget "GLTFQuickLook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA00120000000000000000FF /* Debug */,
+				AA00130000000000000000FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA00210000000000000000FF /* Build configuration list for PBXNativeTarget "GLTFQuickLookExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA00220000000000000000FF /* Debug */,
+				AA00230000000000000000FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA00310000000000000000FF /* Build configuration list for PBXNativeTarget "GLTFQuickLookThumbnail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA00320000000000000000FF /* Debug */,
+				AA00330000000000000000FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AA00700000000000000000FF /* XCRemoteSwiftPackageReference "GLTFKit2" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/warrenm/GLTFKit2";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AA00610000000000000000FF /* GLTFKit2 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA00700000000000000000FF /* XCRemoteSwiftPackageReference "GLTFKit2" */;
+			productName = GLTFKit2;
+		};
+		AA00630000000000000000FF /* GLTFKit2 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA00700000000000000000FF /* XCRemoteSwiftPackageReference "GLTFKit2" */;
+			productName = GLTFKit2;
+		};
+		AA00650000000000000000FF /* GLTFKit2 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA00700000000000000000FF /* XCRemoteSwiftPackageReference "GLTFKit2" */;
+			productName = GLTFKit2;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = AA00010000000000000000FF /* Project object */;
+}

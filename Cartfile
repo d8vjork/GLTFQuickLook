@@ -1,0 +1,3 @@
+# No Carthage dependencies.
+# Preview & Thumbnail: SceneKit + GLTFKit2 (SwiftPM, https://github.com/warrenm/GLTFKit2).
+# QuickLookUI / QuickLookThumbnailing for extension APIs.

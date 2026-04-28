@@ -1,0 +1,15 @@
+{
+  "originHash" : "39783c210862de041b45a22a36f704a23e2678cbb6d29e5be6fec7a208475440",
+  "pins" : [
+    {
+      "identity" : "gltfkit2",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/warrenm/GLTFKit2",
+      "state" : {
+        "branch" : "master",
+        "revision" : "9edf7b9dbfe399e6319a79cde553319f6f0ad4e5"
+      }
+    }
+  ],
+  "version" : 3
+}
